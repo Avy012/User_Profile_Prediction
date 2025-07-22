@@ -56,15 +56,16 @@ def predict_user_profile(
 
     # Decoding
     print("Start decoding")
-    decoder_order = list(encoder_dict.keys())
+    pred_order =  model.output_names
+    print("pred_order", pred_order)
     
-    for i, key in enumerate(decoder_order):
+    for i, key in enumerate(pred_order):
         print("i:",i,"\nkey:",key)
         pred_labels = np.argmax(predictions[i], axis=1)
         decoded = encoder_dict[key].inverse_transform(pred_labels)
         df_with_emb[f"{key}_pred"] = decoded
 
-    print(df_with_emb.head())
+    print(df_with_emb)
 
     return df_with_emb
 
