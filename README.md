@@ -1,6 +1,6 @@
 # User Profile Prediction
 
-<img width="1280" height="720" alt="모델그림_가로" src="https://github.com/user-attachments/assets/a309ef87-1690-48d8-841a-b0d442b015df" />
+<img width="1066" height="600" alt="모델그림_가로" src="https://github.com/user-attachments/assets/a309ef87-1690-48d8-841a-b0d442b015df" />
 
 
 This repository contains project that predicts user profiles from text data, using the BERT model.
